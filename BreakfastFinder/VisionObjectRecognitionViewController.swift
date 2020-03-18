@@ -121,7 +121,7 @@ class VisionObjectRecognitionViewController: ViewController {
         // rotate the layer into screen orientation and scale and mirror
         detectionOverlay.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(.pi / 2.0)).scaledBy(x: scale, y: -scale))
         // center the layer
-        detectionOverlay.position = CGPoint (x: bounds.midX, y: bounds.midY)
+        detectionOverlay.position = CGPoint(x: bounds.midX, y: bounds.midY)
         
         CATransaction.commit()
         
